@@ -1,99 +1,109 @@
-[**Live web version here**](https://kormyen.github.io/memex/)
+# bebex
+[Personal Knowledge Base by Hamish MacDonald](https://github.com/kormyen/memex/)
 
-**Memex** is a [personal knowledge base](https://scholar.colorado.edu/csci_techreports/931/).
+[Live Demo](https://kormyen.github.io/memex/)
 
-A bookmarks and notes tool to help with storage and overview.
+this repo is for simplifying the original one and added some examples.
 
-Read-only and 'sever-less' for easy sharing.
+## Examples
 
-<img src='https://raw.githubusercontent.com/kormyen/memex/master/PREVIEW.jpg'/>
-
-Memex supports:
-
-- filtering
-- tags
-- images
-- notes
-- quotes
-- terms
-- links
-- author
-- files
-- projects
-- themes
-
-To change theme simply drag a [theme svg file](https://github.com/hundredrabbits/Themes/tree/master/themes) onto the Memex webpage
-
-More information on themes can be found [here](https://github.com/hundredrabbits/Themes)
-
-### Examples
-
-- [Kormyen's Memex](https://kormyen.github.io/memex/) - this repo
-- [Shinestrength's Portfolio](http://www.shinestrength.xyz/) - [repo](https://github.com/shinestrength/memex)
-- Dotcli's Memex - [repo](https://github.com/dotcli/memex)
-
-### Dev
+### Images
 ```
-git clone git@github.com:kormyen/memex.git
+THE NATANIEV OVERSEER
+  DATE : 12018-07-18
+  AUTH : neauoire
+  TAGS : inspiration, tool, design, neauoire
+  LINK : https://twitter.com/neauoire/status/1019489401192116224
+  TYPE : image
+  FILE : 12018-07-18_theNatanievOverseer.jpg
+  WIDE : true
 ```
+![image_sample](https://cdn.statically.io/gh/Indra2108/cdn/main/bebex_preview/images_sample.png)
 
-Then open `memex/index.html` in any web browser
+Links
+```
+LET'S ENCRYPT
+  LINK : https://letsencrypt.org/
+  TYPE : tool
+  DATE : 12018-07-17
+  DONE : true
+  TAGS : code, web
+  NOTE : Free encryption ssl cert
+```
+![link_sample](https://cdn.statically.io/gh/Indra2108/cdn/main/bebex_preview/link_sample.png)
 
-### Data
+### Notes
+```
+GIT IMPERATIVE VERB
+  LINK : https://medium.com/@danielfeelfine/commit-verbs-101-why-i-like-to-use-this-and-why-you-should-also-like-it-d3ed2689ef70
+  TYPE : article
+  TAGS : code
+  NOTE 
+    > Convension for Git commit messages
+    & If applied, this commit will 'YOUR GIT COMMIT MESSAGE'
+    & The first word of your message should always be a common verb:
+    - *Add* some feature
+    - *Remove* class whatever
+    - *Update* dependency x
+    - *Refactor* function y
+    - *Fix* crazy bug
+```
+![link_sample](https://cdn.statically.io/gh/Indra2108/cdn/main/bebex_preview/note_sample.png)
 
-[memex/content/data.ndtl](content/data.ndtl)
+### Quotes
+```
+CODEX
+  LINK : https://github.com/uonai/Codex
+  TYPE : encyclopedia
+  QOTE 
+    > 'If someone contacts you, always respond.'
+    > 'Elevate the stories of the exiles.'
+    > 'Support your partner in all forms of growth.'
+    > 'Make time for yourself.'
+    > 'Don't idealize a future. Be there in the present.'
+    > 'Computers are difficult and struggling with technology means you're learning.'
+    > 'Programming languages are for building things. The more things you build, the more programming languages will make sense.'
+    > 'All technologists are both designers and developers.'
+    > 'Social media is a form of gambling. Treat it with caution.'
+    > 'Running away from technology is pointless. Build something better on top of existing technology.'
+    > 'Optimize for skills, not pay grade.'
+  DATE : 12018-07-17
+  DONE : true
+  REVI : true
+  TAGS : inspiration, philosophy, code, psychology
+```
+![link_sample](https://cdn.statically.io/gh/Indra2108/cdn/main/bebex_preview/quote_sample.png)
 
-Stored in a human-readable, flat-file database called [Indental](https://wiki.xxiivv.com/#indental) which is made by Devine Lu Linvega
+```
+OCTOBER
+  PERS : alx
+  SRCE : Merveilles
+  NOTE : 'October' - Chine Meiville
+  TYPE : book
+  QOTE 
+    > It's very easy to read, extremely lucid
+    & The problem is, it's still a difficult read
+    & At least at the moment, I'm early in the book, so there are a lot of things going on, some of them horrifying
+    & A mix of xenophobes, fascists, and antisemites did some horrible things to toddlers :c
+    & Traditional teaching of the history of the revolution in russia kind of ignores the horrific things that were happening that led up to it
+    & I'm also going through the TTC russian history course ('From Peter the Great to Gorbachev'), and as far as I can tell, they completely pass over the mass protests and the sheer disregard for human life that the previous regime had (edited)
+    & I recommend it, but it's a difficult read for the same sorts of reasons that "Why I don't talk [to whit
+```
+![link_sample](https://cdn.statically.io/gh/Indra2108/cdn/main/bebex_preview/quote_sample_2.png)
 
-### Settings
+### Term
+```
+EXOCORTEX
+  DATE : 12018-08-13
+  TYPE : term
+  PERS : cblgh
+  SRCE : SSB
+  LINK : https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Exocortex.html
+  TERM 
+    > Exocortex: "An exocortex is a hypothetical artificial external information processing system that would augment a brain's biological high-level cognitive processes.
+    & An individual's exocortex would be composed of external memory modules, processors, IO devices and software systems that would interact with, and augment, a person's biological brain. Typically this interaction is described as being conducted through a direct brain–computer interface, making these extensions functionally part of the individual's mind.
+    & Individuals with significant exocortices could be classified as cyborgs or posthumans."
+  PROJ : Memex
+```
+![link_sample](https://cdn.statically.io/gh/Indra2108/cdn/main/bebex_preview/term_sample.png)
 
-[memex/content/settings.js](content/settings.js)
-
-| Setting  | Description |
-|            ---: | :---                                                                                                |
-|    STATSNUMTAGS | max limit of tags to show in menu                                                                   |
-|    STATSNUMTYPE | max limit of types to show in menu                                                                  |
-|     LOADANIMNUM | threshold number of articles in query/displayed to trigger loading animation to display             |
-|     WIDEARTICLE | allow wide entries (`WIDE : true`)                                                                  |
-| AUTOWIDETRIGGER | automatically wide entry if it has more QOTE entries than this number                               |
-|      USEMASONRY | enable [masonry](https://masonry.desandro.com/) layout library usage                                |
-| MASONRYPROGRESS | masonry re-layout as images load (true), or only once all images complete (false)                   |
-|   ARTICLEIDBASE | CSS name prefix                                                                                     |
-|       SHOWUPPER | toggle display of upper entry element(s)                                                            |
-|       SHOWTITLE | toggle display of entry title                                                                       |
-|        SHOWAUTH | toggle display of entry author(s)                                                                   |
-|        SHOWTYPE | toggle display of entry type(s)                                                                     |
-|        SHOWLINK | toggle display of entry link(s)                                                                     |
-|       SHOWLOWER | toggle display of lower entry element(s)                                                            |
-|        SHOWTAGS | toggle display of entry tag(s)                                                                      |
-|        SHOWPROJ | toggle display of entry project(s)                                                                  |
-|        SHOWNOTE | toggle display of entry notes                                                                       |
-|        SHOWQOTE | toggle display of entry quote(s)                                                                    |
-|        SHOWTERM | toggle display of entry term(s)                                                                     |
-|        SHOWDONE | toggle display of menu done (tick/cross)                                                            |
-|        SHOWPROG | toggle display of entry progress notes                                                              |
-|        SHOWIMAG | toggle display of entry image                                                                       |
-|        SHOWFILE | toggle display of entry file(s)                                                                     |
-|     SHOWOVERLAY | toggle display of dark overlay shown when hovering image type entries to improve text readability   |
-
-### Dependencies
-
-- Database parser: [Indental](https://wiki.xxiivv.com/#indental)
-- Theming: [Themes](https://github.com/hundredrabbits/Themes)
-- Grid layout: [Masonry](https://masonry.desandro.com/)
-- Icons: [Font Awesome](https://fontawesome.com/)
-
-### Thanks
-
-- Devine Lu Linvega ([Oscean](https://github.com/XXIIVV/Oscean))
-- Rekka Bell ([kokorobot](https://github.com/rekkabell/kokorobot))
-- Hundred Rabbits ([Ecosystem](https://github.com/hundredrabbits))
-- Josh Avanier ([Log](https://github.com/joshavanier/log))
-- Alexey Botkov ([Legacy](https://github.com/nomand/Legacy))
-- Seena Burns ([Isolate](https://github.com/seenaburns/isolate))
-
----
-
-Hamish MacDonald
-
-**[Twitter](https://twitter.com/kormyen)** &middot; **[Home](https://kor.nz)**

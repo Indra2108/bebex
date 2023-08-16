@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>memex</title>
+  <title>bebex</title>
   <link rel="stylesheet" href="asset/style.css">
   <script src="logic/lib/theme.js"></script>
 </head>
+
 <body>
   <script> let theme = new Theme(); theme.install(); theme.start(); </script>
-  <div class="loading-wave"><div></div><div></div><div></div><div></div><div></div></div>
+  <div class="loading-wave">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 
   <nav></nav>
   <div class="container">
@@ -26,7 +34,7 @@
   <div class="error"></div>
   <div class="lightbox"></div>
   <div class="page-overlay" id="overlay"></div>
-  
+
   <link rel="stylesheet" property="stylesheet" href="asset/fontawesome/css/all.css">
   <script src="logic/lib/imagesloaded.js"></script>
   <script src="logic/lib/masonry.js"></script>
@@ -42,7 +50,7 @@
   <script src="logic/main.js"></script>
   <script src="logic/lightbox.js"></script>
   <script>
-    window.onerror = function(error, url, line) {
+    window.onerror = function (error, url, line) {
       document.querySelector('.loading-wave').style.display = 'none';
       document.querySelector('.error').style.display = 'inline-block';
     };
@@ -55,4 +63,5 @@
     main.start();
   </script>
 </body>
+
 </html>

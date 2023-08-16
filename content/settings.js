@@ -10,7 +10,7 @@ const SETTINGS =
 	ARTICLEIDBASE: 'item',
 	SHOWUPPER: true,
 	SHOWTITLE: true,
-	SHOWDATE: true,
+	SHOWDATE: false,
 	SHOWAUTH: true,
 	SHOWTYPE: true,
 	SHOWLINK: true,
